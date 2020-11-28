@@ -79,14 +79,13 @@
         <th>productID</th>
         <th>orderNumber</th>
       </tr>
+      {% for r in rows}
       <tr>
-        <td>53278</td>
-        <td>42069</td>
+        <td>{{r.0}}</td>
+        <td>{{r[1]}}</td>
+        <td>{{r[2]}}</td>
       </tr>
-      <tr>
-        <td>53232</td>
-        <td>42069</td>
-      </tr>
+      {% end for %}
     </tbody>
   </table>
   <div class="input-group mb-3">

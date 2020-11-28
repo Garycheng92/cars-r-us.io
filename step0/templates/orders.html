@@ -78,11 +78,13 @@
       </tr>
     </thead>
     <tbody>
+      {% for r in rows}
       <tr>
-        <td>42069</td>
-        <td>90210</td>
-        <td>$1309.98</td>
+        <td>{{r.0}}</td>
+        <td>{{r[1]}}</td>
+        <td>{{r[2]}}</td>
       </tr>
+      {% end for %}
     </tbody>
   </table>
   <div class="input-group mb-3">
